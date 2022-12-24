@@ -9,6 +9,7 @@ by [Xu Ma](https://ma-xu.github.io/), [Huan Wang](http://huanwang.tech/), [Can Q
     <a><img src="uploads/mila.png"  height="70px" ></a>
 </div>
 
+----
 
 ## Motivation
 <div align="center">
@@ -103,12 +104,14 @@ CUDA_VISIBLE_DEVICES=0,1,2,3,4,5,6,7 ./distributed_train.sh 8 /path/to/imagenet 
 
 For detection and segmentation tasks, please see here: [[detection & instance segmentation]](./detection) and [[semantic segmentation]](./segmentation).
 
-
+----
 
 ## Acknowledgment
 Our implementation is mainly based on the following codebases. We gratefully thank the authors for their wonderful works.
 
 [poolformer](https://github.com/sail-sg/poolformer), [pytorch-image-models](https://github.com/rwightman/pytorch-image-models), [mmdetection](https://github.com/open-mmlab/mmdetection), [mmsegmentation](https://github.com/open-mmlab/mmsegmentation).
+
+----
 
 ## Citation
 ```
