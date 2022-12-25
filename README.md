@@ -19,9 +19,8 @@ by [Xu Ma](https://ma-xu.github.io/), [Huan Wang](http://huanwang.tech/), [Can Q
 Figure 1: Attention map visualizations of Vision Transformers. For each pair, we show the **query point** and its corresponding **attention map** (of last block and last head). We randomly selected images and the query points for illustration. The right color bar identifies the value of normalized attention maps. 
 
 :eyes: :bangbang: **Observations & Motivations:**
- * :small_orange_diamond: **`Query-irrelevant behavior.`** The attention maps consistently show a query-irrelevant (and even head-irrelevant) behavior. Visually, the attention maps appear to be nearly identical for each testing model and image, regardless of the query patch. This is a departure from the design philosophy of self-attention that each patch should exhibit a distinct attention map.
- * :small_orange_diamond: **`Sparse attention.`**  The attention weights (see ViT-B, ViT- L, and DeiT-B) are relatively sparse, indicating that only several patches dominate the attention.
- * :small_orange_diamond: **`Convolution helps.`** By introducing the knowledge from convolution, the attention weights (see DeiT-B-Distill) are largely smoothed, and the performance is significantly improved as well (83.4% of DeiT-B-Distill vs. 81.8% of DeiT-B top-1 accuracy on ImageNet-1K validation set).
+ * :small_orange_diamond: **`Query-irrelevant behavior.`** The attention maps consistently show a query-irrelevant (and even head-irrelevant) behavior. Visually, the attention maps appear to be nearly identical for each testing model and image, regardless of the query patch. This is a departure from the design philosophy of self-attention that each patch should exhibit a distinct attention map, indicating that a global context may be concealed behind the attention mechanism.
+ * :small_orange_diamond: **`Sparse attention & Convolution helps.`**  The attention weights (see ViT-B, ViT- L, and DeiT-B) are relatively sparse, indicating that only several patches dominate the attention.  By introducing the knowledge from convolution, the attention weights (see DeiT-B-Distill) are largely smoothed, and the performance is significantly improved as well (83.4% of DeiT-B-Distill vs. 81.8% of DeiT-B top-1 accuracy on ImageNet-1K validation set).
 
 
 
