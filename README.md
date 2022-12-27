@@ -1,4 +1,4 @@
-# A Close Look at Spatial Modeling: From Attention to Convolution
+# A Close Look at Spatial Modeling: From Attention to Convolution [[arXiv]](https://arxiv.org/abs/2212.12552)
 
 by [Xu Ma](https://ma-xu.github.io/), [Huan Wang](http://huanwang.tech/), [Can Qin](https://canqin.tech/), [Kunpeng Li](https://kunpengli1994.github.io/), [Xingchen Zhao](https://www.xingchenzhao.com/), [Jie Fu](https://bigaidream.github.io/), [Yun Fu](http://www1.ece.neu.edu/~yunfu/)
 
